@@ -46,3 +46,6 @@ Böylelikle bu değer sahip olmayan hiç bir tarayıcı çerez güvenliğinden g
 ## Dikkat !
 
 Çerez yazımından önce çok sayıda HMTL içeriğinin olması sonucunda ```HTTP Başlıkları Zaten Yazıldı.``` hatası alırsınız. Böyle bir durumda çereziniz yazılmayacaktır. Çerez yazımı sırasında tarayıcı panelinizi açarak çerezin doğru bir biçimde yazıldığından emin olun.
+
+## Notlar
+Tasarımda Bootstrap 5'i ( alfa ) temel almakla birlikte küçük değişiklikler yapılmıştır. Tasarım dosyası HTML belgesine gömülüdür.
