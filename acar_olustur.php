@@ -35,6 +35,7 @@
 		error_reporting( E_ALL );
 
 		$cerez_gecerlilik_suresi = 40; // Dakika türünden.
+		$cerez_adi = "acar";
 
 		if( $_SERVER[ "HTTPS" ] == "off" ){
 			echo( "<h1>HTTPS Etkinleştirilmemiş.</h1>" );
@@ -54,7 +55,7 @@
 		if( isset( $_POST[ "açar" ] ) ){
 			$_açar = $_POST[ "açar" ];
 			if( isValid( $_açar ) && strlen( $_açar ) == 32 ){
-				setcookie ( "acar", $_POST[ "açar" ], time() + 60 * $cerez_gecerlilik_suresi, "path=/;secure;HttpOnly;SameSite=Lax" ); // Çerez yazıldı.
+				setcookie ( $cerez_adi, $_POST[ "açar" ], time() + 60 * $cerez_gecerlilik_suresi, "path=/;secure;HttpOnly;SameSite=Lax" ); // Çerez yazıldı.
 				ob_clean();
 				echo( $_POST[ "açar" ] );
 			}
